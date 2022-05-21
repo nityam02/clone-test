@@ -1,0 +1,191 @@
+@import './variables.scss';
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.align-baseline {
+align-items: baseline;
+}
+
+.rounded-full {
+  border-radius: 50%;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.h-full {
+  height: 100%;
+}
+.h-vh{
+  height: 100vh;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.select-none {
+  user-select: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.word-break {
+  word-break: break-word;
+}
+
+.outline-none {
+  outline: none;
+}
+
+.border-none {
+  border: none;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.bg-white {
+  color: #fff;
+}
+
+.text-main {
+  color: $main;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.bg-main {
+  background-color: $main;
+}
+
+.content-holder {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+// generates text-12 class for font-sizes
+@for $i from 10 through 40 {
+  .text-#{$i} {
+    font-size: 1px * $i;
+  }
+}
+
+// font-300 for font-weight: 300
+@for $i from 1 through 9 {
+  .font-#{$i*100} {
+    font-weight: 100 * $i;
+  }
+}
+
+//padding-bottom
+@for $i from 1 through 30 {
+  .pb-#{$i*2} {
+    padding-bottom: 2px * $i;
+  }
+}
+
+//padding-top
+@for $i from 1 through 30 {
+  .pt-#{$i*2} {
+    padding-top: 2px * $i;
+  }
+}
+
+// margin-bottom
+@for $i from 1 through 20 {
+  .mb-#{$i*2} {
+    margin-bottom: 2px * $i;
+  }
+}
+// margin-top
+@for $i from 1 through 20 {
+  .mt-#{$i*2} {
+    margin-top: 2px * $i;
+  }
+}
+
+// margin-right
+@for $i from 1 through 20 {
+  .mr-#{$i*2} {
+    margin-right: 2px * $i;
+  }
+}
+// margin-left
+@for $i from 1 through 20 {
+  .ml-#{$i*2} {
+    margin-left: 2px * $i;
+  }
+}

@@ -1,0 +1,29 @@
+$white:#fff;
+
+.header-container {
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  min-height: 92px;
+  padding: 12px;
+
+  &__data {
+      &__text{
+        font-size: 2rem;
+        font-weight: 600;
+      }
+  }
+
+  &__image{
+    max-width: 14rem;
+    height: 2.7rem;
+    display: block;
+    cursor: pointer;
+  }
+
+  &__finder{
+    background-color: $white;
+    box-shadow: 0 7px 34px 0 rgba(147, 144, 144, 0.17);
+  }
+  
+}
