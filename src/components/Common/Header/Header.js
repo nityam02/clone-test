@@ -10,7 +10,6 @@ import Find from '../../Find'
 export default function Header() {
     const [location, setLocation] = useState("Delhi");
     const [searchQuery, setQuery] = useState(null);
-
     
     function classNames(...classes) {
         return classes.filter(Boolean).join(" ");
@@ -152,7 +151,7 @@ export default function Header() {
       </Menu>
 
       
-      <div className="ml-5 -mt-3  md:w-80 md:ml-0  max-w-6xl hidden  lg:w-auto md:inline-flex items-center shadow-md rounded-md border border-gray-300 search-bar overflow-hidden
+      <div className="ml-5 -mt-3   md:ml-0    md:inline-flex items-center shadow-md rounded-md border border-gray-300 search-bar overflow-hidden
 ">
         <input
           className=" w-96 py-4 px-6 text-gray-700 leading-tight focus:outline-none"
@@ -183,7 +182,7 @@ export default function Header() {
         </div>
         <div
         className={
-          searchQuery ? "absolute  rounded-lg top-20 w-80 max-w-lg px-10 lg:w-max z-10 shadow-md overflow-y-auto max-h-96  header-container__finder"
+          searchQuery ? "absolute rounded-lg top-20 w-33  px-10 w-max z-10 shadow-md overflow-y-auto max-h-96  header-container__finder"
               : "hidden"
         }>
           {searchQuery ? <Find searchQuery={searchQuery} /> : ""}
@@ -193,10 +192,7 @@ export default function Header() {
        <p className="mr-8 ml-20 cursor-pointer"> Login</p>
        <p className="mr-8 ml-20 cursor-pointer"> SignUp</p>
       </div>
-      
-      <div className="lg:hidden navbar">
-       navbar
-      </div>
+    
       </div>
     </>
   );

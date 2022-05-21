@@ -1,5 +1,4 @@
 import React from 'react'
-import './DiningOptions.scss'
 
 const DiningOptions = () => {
   return (

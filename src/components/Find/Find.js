@@ -2,7 +2,7 @@ import React from "react";
 
 import  useFetch from '../../hooks/useFetch'
 function Find({ searchQuery }) { 
-const results = useFetch(searchQuery);  
+const results = useFetch(`https://autocomplete.clearbit.com/v1/companies/suggest?query=${searchQuery}`);  
   return (
     <>
       {results
